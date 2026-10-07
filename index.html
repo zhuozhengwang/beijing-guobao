@@ -1,0 +1,1135 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>北京国保导游 · 135处全国重点文物保护单位</title>
+<meta name="description" content="北京全国重点文物保护单位导游手册：135处国保名录、8处世界遗产、8个公布批次，含名录检索、精选景点、主题路线与行前贴士。">
+<style>
+/* ============ 基础 ============ */
+:root{
+  --paper:#F7F4ED;
+  --paper-2:#FFFFFF;
+  --paper-3:#FBF9F4;
+  --ink:#241F1B;
+  --ink-2:#57504A;
+  --ink-3:#8C8479;
+  --ink-4:#B3AA9D;
+  --red:#A33229;
+  --red-2:#C4564A;
+  --red-wash:#F4E7E3;
+  --gold:#B08A46;
+  --gold-2:#D9C08A;
+  --gold-wash:#F6EEDC;
+  --green:#3B5B4A;
+  --green-wash:#E7EEE8;
+  --blue:#3E5670;
+  --line:#E4DCCD;
+  --line-2:#EFE9DD;
+  --shadow:0 1px 2px rgba(60,45,25,.04),0 8px 24px -12px rgba(60,45,25,.18);
+  --shadow-lg:0 2px 4px rgba(60,45,25,.05),0 24px 48px -20px rgba(60,45,25,.28);
+  --serif:"Songti SC","STSong","SimSun","Noto Serif SC","Source Han Serif SC",serif;
+  --sans:-apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Helvetica Neue",Arial,sans-serif;
+  --maxw:1180px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{
+  font-family:var(--sans);
+  color:var(--ink);
+  background:var(--paper);
+  line-height:1.7;
+  font-size:15px;
+  overflow-x:hidden;
+}
+body::before{
+  content:"";position:fixed;inset:0;pointer-events:none;z-index:0;opacity:.5;
+  background-image:radial-gradient(circle at 20% 30%,rgba(176,138,70,.05) 0 1px,transparent 1px),
+                   radial-gradient(circle at 70% 65%,rgba(163,50,41,.035) 0 1px,transparent 1px);
+  background-size:52px 52px,38px 38px;
+}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px;position:relative;z-index:1}
+a{color:inherit;text-decoration:none}
+::selection{background:var(--red);color:#fff}
+
+/* ============ 导航 ============ */
+.nav{
+  position:sticky;top:0;z-index:80;
+  background:rgba(247,244,237,.86);
+  backdrop-filter:saturate(180%) blur(14px);
+  -webkit-backdrop-filter:saturate(180%) blur(14px);
+  border-bottom:1px solid var(--line);
+}
+.nav-in{max-width:var(--maxw);margin:0 auto;padding:0 24px;height:62px;display:flex;align-items:center;gap:20px}
+.brand{display:flex;align-items:center;gap:11px;flex:none}
+.seal{
+  width:34px;height:34px;border-radius:6px;background:var(--red);color:#fff;
+  display:grid;place-items:center;font-family:var(--serif);font-size:16px;
+  letter-spacing:-1px;box-shadow:0 3px 10px -3px rgba(163,50,41,.6);flex:none;
+  line-height:1;
+}
+.brand b{font-family:var(--serif);font-size:18px;letter-spacing:2px;font-weight:600}
+.brand span{font-size:11px;color:var(--ink-3);letter-spacing:.5px;display:block;line-height:1.2}
+.nav-links{display:flex;gap:2px;margin-left:auto;flex-wrap:wrap}
+.nav-links a{
+  padding:7px 13px;border-radius:7px;font-size:13.5px;color:var(--ink-2);
+  transition:.18s;white-space:nowrap;letter-spacing:.5px;
+}
+.nav-links a:hover{background:var(--red-wash);color:var(--red)}
+
+/* ============ Hero ============ */
+.hero{position:relative;padding:54px 0 0;overflow:hidden}
+.hero-top{display:grid;grid-template-columns:1.05fr .95fr;gap:48px;align-items:center}
+.eyebrow{
+  display:inline-flex;align-items:center;gap:8px;font-size:12px;letter-spacing:2.5px;
+  color:var(--red);border:1px solid var(--gold-2);background:var(--gold-wash);
+  padding:5px 12px;border-radius:100px;margin-bottom:22px;
+}
+.eyebrow i{width:5px;height:5px;background:var(--red);border-radius:50%;display:block}
+h1{
+  font-family:var(--serif);font-size:clamp(38px,5.6vw,66px);line-height:1.14;font-weight:600;
+  letter-spacing:3px;margin-bottom:20px;
+}
+h1 em{font-style:normal;color:var(--red);position:relative}
+h1 em::after{
+  content:"";position:absolute;left:0;right:0;bottom:6px;height:9px;
+  background:linear-gradient(90deg,var(--gold-2),rgba(217,192,138,0));z-index:-1;border-radius:2px;
+}
+.lede{font-size:16px;color:var(--ink-2);max-width:540px;margin-bottom:26px}
+.lede b{color:var(--ink);font-weight:600}
+.hero-cta{display:flex;gap:12px;flex-wrap:wrap}
+.btn{
+  display:inline-flex;align-items:center;gap:8px;padding:11px 22px;border-radius:8px;
+  font-size:14px;letter-spacing:.8px;border:1px solid transparent;cursor:pointer;
+  transition:.2s;font-family:inherit;
+}
+.btn-primary{background:var(--red);color:#fff;box-shadow:0 8px 20px -10px rgba(163,50,41,.8)}
+.btn-primary:hover{background:#8E2A22;transform:translateY(-1px)}
+.btn-ghost{border-color:var(--line);background:var(--paper-2);color:var(--ink-2)}
+.btn-ghost:hover{border-color:var(--gold);color:var(--red)}
+.skyline{width:100%;height:auto;display:block}
+.hero-strip{
+  margin-top:26px;border-top:1px solid var(--line);border-bottom:1px solid var(--line);
+  display:grid;grid-template-columns:repeat(4,1fr);
+}
+.stat{padding:22px 20px;border-right:1px solid var(--line);text-align:center}
+.stat:last-child{border-right:none}
+.stat b{font-family:var(--serif);font-size:34px;color:var(--red);display:block;line-height:1.1;letter-spacing:1px}
+.stat b i{font-style:normal;font-size:15px;color:var(--ink-3);margin-left:3px;font-family:var(--sans)}
+.stat span{font-size:12.5px;color:var(--ink-3);letter-spacing:1.2px}
+
+/* ============ 通用区块 ============ */
+section{padding:74px 0;position:relative}
+.sec-head{margin-bottom:34px}
+.sec-tag{
+  font-size:12px;letter-spacing:3px;color:var(--gold);text-transform:uppercase;
+  display:block;margin-bottom:12px;font-weight:600;
+}
+.sec-head h2{
+  font-family:var(--serif);font-size:clamp(26px,3.4vw,36px);font-weight:600;letter-spacing:2px;
+  display:flex;align-items:center;gap:14px;flex-wrap:wrap;
+}
+.sec-head h2::before{
+  content:"";width:6px;height:26px;background:var(--red);border-radius:2px;flex:none;
+}
+.sec-head p{color:var(--ink-2);margin-top:12px;max-width:760px;font-size:14.5px}
+.alt{background:var(--paper-3);border-top:1px solid var(--line-2);border-bottom:1px solid var(--line-2)}
+
+/* ============ 世界遗产 ============ */
+.wh-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(268px,1fr));gap:14px}
+.wh{
+  background:var(--paper-2);border:1px solid var(--line);border-radius:12px;padding:20px 20px 18px;
+  position:relative;overflow:hidden;transition:.22s;
+}
+.wh:hover{border-color:var(--gold);transform:translateY(-3px);box-shadow:var(--shadow)}
+.wh::after{
+  content:"";position:absolute;right:-24px;top:-24px;width:78px;height:78px;border-radius:50%;
+  background:var(--gold-wash);opacity:.85;
+}
+.wh .yr{
+  position:relative;font-family:var(--serif);font-size:12px;color:#fff;background:var(--gold);
+  padding:2px 9px;border-radius:100px;letter-spacing:1px;display:inline-block;margin-bottom:12px;
+}
+.wh h3{font-family:var(--serif);font-size:19px;letter-spacing:1px;margin-bottom:8px;position:relative;font-weight:600}
+.wh p{font-size:13px;color:var(--ink-2);position:relative;line-height:1.65}
+
+/* ============ 数据概览 ============ */
+.charts{display:grid;grid-template-columns:1.25fr 1fr;gap:18px}
+.card{
+  background:var(--paper-2);border:1px solid var(--line);border-radius:14px;padding:26px;
+}
+.card h3{
+  font-family:var(--serif);font-size:17px;letter-spacing:1.4px;margin-bottom:6px;font-weight:600;
+  display:flex;align-items:baseline;gap:10px;
+}
+.card h3 small{font-family:var(--sans);font-size:12px;color:var(--ink-3);letter-spacing:0;font-weight:400}
+.bars{margin-top:20px;display:flex;flex-direction:column;gap:11px}
+.bar-row{display:grid;grid-template-columns:104px 1fr 46px;gap:12px;align-items:center;font-size:13px}
+.bar-row .lb{color:var(--ink-2);text-align:right;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.bar-row .vl{font-family:var(--serif);color:var(--red);text-align:right;font-weight:600}
+.track{height:9px;background:var(--line-2);border-radius:100px;overflow:hidden}
+.fill{height:100%;border-radius:100px;background:linear-gradient(90deg,var(--red),var(--red-2));width:0;transition:width 1s cubic-bezier(.22,1,.36,1)}
+.fill.gold{background:linear-gradient(90deg,var(--gold),var(--gold-2))}
+.fill.green{background:linear-gradient(90deg,var(--green),#6C8A78)}
+.donut-wrap{display:flex;align-items:center;gap:26px;margin-top:16px;flex-wrap:wrap}
+.donut{flex:none}
+.legend{display:flex;flex-direction:column;gap:9px;font-size:13px;flex:1;min-width:170px}
+.legend div{display:flex;align-items:center;gap:9px}
+.legend i{width:10px;height:10px;border-radius:3px;flex:none}
+.legend b{margin-left:auto;font-family:var(--serif);color:var(--ink);font-weight:600}
+
+/* ============ 精选 ============ */
+.feat-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:16px}
+.feat{
+  background:var(--paper-2);border:1px solid var(--line);border-radius:14px;overflow:hidden;
+  cursor:pointer;transition:.24s;display:flex;flex-direction:column;
+}
+.feat:hover{transform:translateY(-4px);box-shadow:var(--shadow-lg);border-color:var(--gold)}
+.feat-top{
+  height:104px;position:relative;overflow:hidden;flex:none;
+  background:linear-gradient(135deg,#EFE8DA,#E3D8C4);
+  display:grid;place-items:center;
+}
+.feat-top svg{width:100%;height:100%;display:block}
+.feat-body{padding:18px 20px 20px;display:flex;flex-direction:column;flex:1}
+.feat-body h3{font-family:var(--serif);font-size:19px;letter-spacing:1px;margin-bottom:4px;font-weight:600}
+.feat-meta{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:10px}
+.feat-body p{font-size:13.2px;color:var(--ink-2);flex:1}
+.tag{
+  font-size:11px;padding:2px 8px;border-radius:5px;letter-spacing:.6px;
+  background:var(--red-wash);color:var(--red);border:1px solid rgba(163,50,41,.16);
+}
+.tag.g{background:var(--green-wash);color:var(--green);border-color:rgba(59,91,74,.18)}
+.tag.y{background:var(--gold-wash);color:#8B6A28;border-color:rgba(176,138,70,.24)}
+.tag.n{background:#F1EFEA;color:var(--ink-3);border-color:var(--line)}
+
+/* ============ 名录 ============ */
+.toolbar{
+  background:var(--paper-2);border:1px solid var(--line);border-radius:14px;padding:18px 20px;
+  position:sticky;top:62px;z-index:40;margin-bottom:22px;box-shadow:var(--shadow);
+}
+.tb-row{display:flex;gap:12px;align-items:center;flex-wrap:wrap}
+.search{
+  flex:1;min-width:230px;position:relative;
+}
+.search input{
+  width:100%;padding:11px 14px 11px 40px;border:1px solid var(--line);border-radius:9px;
+  font-size:14px;font-family:inherit;background:var(--paper-3);color:var(--ink);outline:none;transition:.2s;
+}
+.search input:focus{border-color:var(--red);background:#fff;box-shadow:0 0 0 3px var(--red-wash)}
+.search svg{position:absolute;left:13px;top:50%;transform:translateY(-50%);opacity:.45}
+select{
+  padding:11px 14px;border:1px solid var(--line);border-radius:9px;font-size:13.5px;
+  font-family:inherit;background:var(--paper-3);color:var(--ink-2);outline:none;cursor:pointer;
+}
+select:focus{border-color:var(--red)}
+.chips{display:flex;gap:7px;flex-wrap:wrap;margin-top:14px;padding-top:14px;border-top:1px dashed var(--line)}
+.chip{
+  padding:5px 13px;border:1px solid var(--line);border-radius:100px;font-size:12.5px;
+  background:var(--paper-3);color:var(--ink-2);cursor:pointer;transition:.18s;font-family:inherit;
+}
+.chip:hover{border-color:var(--gold);color:var(--red)}
+.chip.on{background:var(--red);color:#fff;border-color:var(--red)}
+.chip.on.g{background:var(--green);border-color:var(--green)}
+.chip-label{font-size:12px;color:var(--ink-4);align-self:center;margin-right:2px;letter-spacing:1px}
+.count{font-size:13px;color:var(--ink-3);margin-bottom:16px;display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
+.count b{font-family:var(--serif);color:var(--red);font-size:19px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(248px,1fr));gap:13px}
+.item{
+  background:var(--paper-2);border:1px solid var(--line);border-radius:11px;padding:16px 17px;
+  cursor:pointer;transition:.2s;position:relative;overflow:hidden;
+}
+.item:hover{border-color:var(--red);transform:translateY(-3px);box-shadow:var(--shadow)}
+.item::before{
+  content:"";position:absolute;left:0;top:0;bottom:0;width:3px;background:var(--line-2);transition:.2s;
+}
+.item:hover::before{background:var(--red)}
+.item h4{font-family:var(--serif);font-size:16px;letter-spacing:.6px;margin-bottom:7px;font-weight:600;line-height:1.4}
+.item .sub{font-size:12px;color:var(--ink-3);display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+.item .sub .dot{width:3px;height:3px;border-radius:50%;background:var(--ink-4)}
+.dotwh{
+  display:inline-flex;align-items:center;gap:4px;font-size:10.5px;color:#8B6A28;
+  background:var(--gold-wash);border:1px solid rgba(176,138,70,.3);padding:1px 7px;border-radius:100px;
+}
+.empty{text-align:center;padding:60px 20px;color:var(--ink-3);font-size:14px}
+.empty b{display:block;font-family:var(--serif);font-size:19px;color:var(--ink-2);margin-bottom:8px}
+
+/* ============ 路线 ============ */
+.route{
+  background:var(--paper-2);border:1px solid var(--line);border-radius:14px;padding:26px 28px;
+  margin-bottom:14px;
+}
+.route-h{display:flex;align-items:baseline;gap:14px;flex-wrap:wrap;margin-bottom:6px}
+.route-h h3{font-family:var(--serif);font-size:20px;letter-spacing:1.4px;font-weight:600}
+.route-h span{font-size:12.5px;color:var(--ink-3)}
+.route-h .no{
+  font-family:var(--serif);font-size:13px;color:#fff;background:var(--red);width:24px;height:24px;
+  border-radius:50%;display:grid;place-items:center;flex:none;align-self:center;
+}
+.route>p{font-size:13.5px;color:var(--ink-2);margin-bottom:20px}
+.steps{display:flex;gap:0;overflow-x:auto;padding-bottom:6px;scrollbar-width:thin}
+.step{flex:1;min-width:132px;position:relative;padding-left:20px}
+.step::before{content:"";position:absolute;left:5px;top:5px;bottom:-6px;width:1px;background:var(--line)}
+.step:last-child::before{display:none}
+.step::after{
+  content:"";position:absolute;left:0;top:3px;width:11px;height:11px;border-radius:50%;
+  background:#fff;border:2px solid var(--gold);z-index:1;
+}
+.step:hover::after{background:var(--red);border-color:var(--red)}
+.step b{display:block;font-size:13.5px;font-weight:600;letter-spacing:.4px;padding-top:0;margin-bottom:3px;line-height:1.4}
+.step small{font-size:11.5px;color:var(--ink-3);line-height:1.5;display:block}
+
+/* ============ 贴士 ============ */
+.tips{display:grid;grid-template-columns:repeat(auto-fill,minmax(276px,1fr));gap:14px}
+.tip{
+  background:var(--paper-2);border:1px solid var(--line);border-radius:12px;padding:22px;
+  transition:.2s;
+}
+.tip:hover{border-color:var(--gold);box-shadow:var(--shadow)}
+.tip .ic{
+  width:38px;height:38px;border-radius:10px;background:var(--gold-wash);display:grid;place-items:center;
+  font-family:var(--serif);font-size:17px;color:var(--gold);margin-bottom:13px;border:1px solid rgba(176,138,70,.24);
+}
+.tip h4{font-family:var(--serif);font-size:16px;letter-spacing:1px;margin-bottom:8px;font-weight:600}
+.tip p{font-size:13.2px;color:var(--ink-2)}
+.tip p em{font-style:normal;color:var(--red);font-weight:600}
+
+/* ============ 弹窗 ============ */
+.mask{
+  position:fixed;inset:0;background:rgba(36,31,27,.5);backdrop-filter:blur(3px);
+  display:none;align-items:flex-start;justify-content:center;z-index:200;padding:40px 20px;overflow-y:auto;
+}
+.mask.on{display:flex;animation:fade .2s ease}
+@keyframes fade{from{opacity:0}to{opacity:1}}
+.modal{
+  background:var(--paper);border-radius:16px;max-width:660px;width:100%;overflow:hidden;
+  box-shadow:var(--shadow-lg);animation:rise .28s cubic-bezier(.22,1,.36,1);margin:auto;
+}
+@keyframes rise{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:translateY(0)}}
+.modal-top{
+  height:118px;position:relative;background:linear-gradient(135deg,#EFE8DA,#E0D4BE);display:grid;place-items:center;overflow:hidden;
+}
+.modal-top svg{width:100%;height:100%}
+.modal-close{
+  position:absolute;right:14px;top:14px;width:32px;height:32px;border-radius:50%;border:none;
+  background:rgba(255,255,255,.86);color:var(--ink-2);cursor:pointer;font-size:17px;line-height:1;
+  display:grid;place-items:center;transition:.2s;z-index:2;
+}
+.modal-close:hover{background:var(--red);color:#fff}
+.modal-body{padding:26px 30px 30px}
+.modal-body h3{font-family:var(--serif);font-size:25px;letter-spacing:1.4px;margin-bottom:12px;font-weight:600}
+.modal-meta{display:flex;gap:7px;flex-wrap:wrap;margin-bottom:20px}
+.dl{display:grid;grid-template-columns:78px 1fr;gap:9px 16px;font-size:13.5px;margin-bottom:18px;
+    padding-bottom:18px;border-bottom:1px dashed var(--line)}
+.dl dt{color:var(--ink-3);font-size:12.5px;letter-spacing:.6px}
+.dl dd{color:var(--ink)}
+.modal-body .desc{font-size:14.5px;color:var(--ink-2);line-height:1.85}
+.modal-body .desc + .note{margin-top:16px}
+.note{
+  background:var(--gold-wash);border-left:3px solid var(--gold);border-radius:0 8px 8px 0;
+  padding:13px 16px;font-size:13px;color:#7A5D22;line-height:1.75;
+}
+.note b{color:#5F4718}
+
+/* ============ 页脚 ============ */
+footer{background:var(--ink);color:#CFC7BA;padding:52px 0 34px;margin-top:0}
+.f-in{max-width:var(--maxw);margin:0 auto;padding:0 24px}
+.f-top{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:36px;padding-bottom:30px;border-bottom:1px solid rgba(255,255,255,.12)}
+footer h4{font-family:var(--serif);color:#fff;font-size:15px;letter-spacing:1.6px;margin-bottom:14px;font-weight:600}
+footer p,footer li{font-size:12.8px;line-height:1.9;color:#A79E90}
+footer ul{list-style:none}
+footer ul li::before{content:"·";color:var(--gold);margin-right:8px}
+.f-bot{padding-top:22px;font-size:11.8px;color:#8A8173;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+
+/* ============ 响应式 ============ */
+@media(max-width:900px){
+  .hero-top{grid-template-columns:1fr;gap:30px}
+  .main{order:-1}
+  .charts{grid-template-columns:1fr}
+  .f-top{grid-template-columns:1fr;gap:26px}
+  .hero-strip{grid-template-columns:repeat(2,1fr)}
+  .stat:nth-child(2){border-right:none}
+  .stat:nth-child(1),.stat:nth-child(2){border-bottom:1px solid var(--line)}
+}
+@media(max-width:640px){
+  .wrap,.nav-in,.f-in{padding:0 17px}
+  section{padding:54px 0}
+  .nav-links{display:none}
+  .toolbar{position:static}
+  .bar-row{grid-template-columns:78px 1fr 40px;font-size:12.2px}
+  .modal-body{padding:22px 20px 24px}
+  .route{padding:20px}
+  .hero{padding-top:34px}
+}
+</style>
+</head>
+<body>
+
+<!-- ============ 导航 ============ -->
+<header class="nav">
+  <div class="nav-in">
+    <a class="brand" href="#top">
+      <div class="seal">京</div>
+      <div>
+        <b>北京国保导游</b>
+        <span>NATIONAL KEY CULTURAL RELICS · BEIJING</span>
+      </div>
+    </a>
+    <nav class="nav-links">
+      <a href="#overview">数据概览</a>
+      <a href="#heritage">世界遗产</a>
+      <a href="#featured">必访精选</a>
+      <a href="#directory">名录检索</a>
+      <a href="#routes">主题路线</a>
+      <a href="#tips">行前贴士</a>
+    </nav>
+  </div>
+</header>
+
+<a id="top"></a>
+
+<!-- ============ Hero ============ -->
+<div class="hero">
+  <div class="wrap">
+    <div class="hero-top">
+      <div>
+        <div class="eyebrow"><i></i>国务院核定公布 · 八个批次 · 截至第八批</div>
+        <h1>一条线，<em>读懂北京</em></h1>
+        <p class="lede">
+          北京有 <b>三千多年建城史、八百多年建都史</b>。国务院先后公布八批全国重点文物保护单位，
+          北京境内共 <b>135 处</b>——从旧石器时代的周口店，到 1986 年落成的宋庆龄儿童科学技术馆，
+          一条 7.8 公里的中轴线串起宫苑、坛庙、城垣与市井。
+        </p>
+        <div class="hero-cta">
+          <a class="btn btn-primary" href="#directory">开始检索名录 →</a>
+          <a class="btn btn-ghost" href="#routes">看主题路线</a>
+        </div>
+      </div>
+      <div class="skyline-box">
+        <svg class="skyline" id="skyline" viewBox="0 0 1200 320" preserveAspectRatio="xMidYMax meet" aria-label="北京中轴线建筑剪影"></svg>
+      </div>
+    </div>
+    <div class="hero-strip">
+      <div class="stat"><b>135<i>处</i></b><span>全国重点文物保护单位</span></div>
+      <div class="stat"><b>8<i>处</i></b><span>世界遗产</span></div>
+      <div class="stat"><b>8<i>批</i></b><span>1961—2019 年公布</span></div>
+      <div class="stat"><b>16<i>区</i></b><span>全域覆盖</span></div>
+    </div>
+  </div>
+</div>
+
+<!-- ============ 数据概览 ============ -->
+<section id="overview" class="alt">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="sec-tag">Overview</span>
+      <h2>一张名录里的北京</h2>
+      <p>135 处国保单位跨越旧石器时代至当代。按类别看，<b>古建筑</b>占比最高；按空间看，<b>东城、西城</b>两区集中了老城精华；按批次看，2006 年第六批一次性新增 38 处，是一次大幅扩容。</p>
+      <p style="font-size:12.8px;color:var(--ink-3);margin-top:10px">统计口径：跨行政区与跨批次项目（如长城、大运河、明北京城城墙遗存）按其主条目计 1 处，故各批次条目数与官方「新增处数」可能相差 1—3 处。</p>
+    </div>
+    <div class="charts">
+      <div class="card">
+        <h3>行政区分步 <small>各区国保单位数量</small></h3>
+        <div class="bars" id="distBars"></div>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:18px">
+        <div class="card">
+          <h3>类别构成 <small>按文物类型</small></h3>
+          <div class="donut-wrap">
+            <svg class="donut" id="donut" width="150" height="150" viewBox="0 0 150 150"></svg>
+            <div class="legend" id="catLegend"></div>
+          </div>
+        </div>
+        <div class="card">
+          <h3>批次分布 <small>历次公布</small></h3>
+          <div class="bars" id="batchBars" style="margin-top:16px"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 世界遗产 ============ -->
+<section id="heritage">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="sec-tag">World Heritage</span>
+      <h2>北京的世界遗产</h2>
+      <p>北京是中国世界遗产数量最多的城市之一。下述 8 项世界遗产，其核心载体大多同时是全国重点文物保护单位——「双重身份」意味着更高等级的保护要求。</p>
+    </div>
+    <div class="wh-grid" id="whGrid"></div>
+  </div>
+</section>
+
+<!-- ============ 精选 ============ -->
+<section id="featured" class="alt">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="sec-tag">Highlights</span>
+      <h2>第一次来北京，先看这十二处</h2>
+      <p>它们分别代表了皇家宫殿、祭坛、园林、陵寝、宗教建筑、远古遗址与近现代史迹，是理解北京最省力的入口。点击卡片查看详情。</p>
+    </div>
+    <div class="feat-grid" id="featGrid"></div>
+  </div>
+</section>
+
+<!-- ============ 名录 ============ -->
+<section id="directory">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="sec-tag">Directory</span>
+      <h2>135 处国保名录检索</h2>
+      <p>支持按行政区、文物类别筛选，或直接输入名称 / 关键词搜索。点击任意条目查看时代、批次与简介。</p>
+    </div>
+    <div class="toolbar">
+      <div class="tb-row">
+        <div class="search">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+          <input id="q" type="search" placeholder="搜索名称，如：故宫、白塔、长城、会馆……">
+        </div>
+        <select id="selBatch">
+          <option value="">全部批次</option>
+          <option value="1">第一批（1961）</option>
+          <option value="2">第二批（1982）</option>
+          <option value="3">第三批（1988）</option>
+          <option value="4">第四批（1996）</option>
+          <option value="5">第五批（2001）</option>
+          <option value="6">第六批（2006）</option>
+          <option value="7">第七批（2013）</option>
+          <option value="8">第八批（2019）</option>
+        </select>
+        <select id="selSort">
+          <option value="batch">按批次排序</option>
+          <option value="dist">按行政区排序</option>
+          <option value="name">按名称排序</option>
+        </select>
+      </div>
+      <div class="chips" id="distChips"></div>
+      <div class="chips" id="catChips" style="border-top:none;padding-top:10px;margin-top:0"></div>
+    </div>
+    <div class="count">
+      <span>共找到 <b id="n">0</b> 处</span>
+      <button class="chip" id="reset">清除筛选</button>
+    </div>
+    <div class="grid" id="grid"></div>
+    <div class="empty" id="empty" style="display:none">
+      <b>没有匹配的条目</b>换个关键词，或清除筛选条件再试。
+    </div>
+  </div>
+</section>
+
+<!-- ============ 路线 ============ -->
+<section id="routes" class="alt">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="sec-tag">Routes</span>
+      <h2>六条主题路线</h2>
+      <p>按「一条线索串起一组国保」的思路编排。每条路线内的点位可按体力与时间自由截取，不必走完。</p>
+    </div>
+    <div id="routesBox"></div>
+  </div>
+</section>
+
+<!-- ============ 贴士 ============ -->
+<section id="tips">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="sec-tag">Before You Go</span>
+      <h2>行前贴士</h2>
+      <p>国保单位不等于「景点」——其中相当一部分是办公、教学、居住或宗教场所，并不对外开放。出发前务必确认开放状态。</p>
+    </div>
+    <div class="tips" id="tipsBox"></div>
+  </div>
+</section>
+
+<!-- ============ 页脚 ============ -->
+<footer>
+  <div class="f-in">
+    <div class="f-top">
+      <div>
+        <h4>关于本站</h4>
+        <p>本站为北京全国重点文物保护单位导游手册，面向自助游客与文博爱好者，整理名录、分类、批次与游线，供行前规划与随身查阅。</p>
+      </div>
+      <div>
+        <h4>资料依据</h4>
+        <ul>
+          <li>国务院历次公布的全国重点文物保护单位名单</li>
+          <li>国家文物局公共信息服务</li>
+          <li>北京市文物局文博数据（分批次名录）</li>
+          <li>《北京中轴线》申遗文本与官方发布</li>
+        </ul>
+      </div>
+      <div>
+        <h4>使用提示</h4>
+        <ul>
+          <li>开放时间、预约与票务以景区官方公告为准</li>
+          <li>部分单位为办公/教学场所，不对外开放</li>
+          <li>文物建筑内请勿触摸、刻画、使用闪光灯</li>
+          <li>宗教场所请保持安静，尊重当地习俗</li>
+        </ul>
+      </div>
+    </div>
+    <div class="f-bot">
+      <span>北京国保导游 · 名录收录 135 处（截至第八批）</span>
+      <span>内容整理自公开资料，仅供旅行参考</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ============ 弹窗 ============ -->
+<div class="mask" id="mask">
+  <div class="modal" role="dialog" aria-modal="true">
+    <div class="modal-top">
+      <svg id="modalArt" viewBox="0 0 660 118" preserveAspectRatio="xMidYMid slice"></svg>
+      <button class="modal-close" id="mClose" aria-label="关闭">✕</button>
+    </div>
+    <div class="modal-body" id="mBody"></div>
+  </div>
+</div>
+
+<script>
+/* =========================================================
+   数据：[名称, 行政区, 类别, 年代, 批次, 世界遗产(0/1), 简介, 参观提示]
+   依据国务院公布的八批全国重点文物保护单位名单整理
+   ========================================================= */
+const RAW = [
+/* ---------- 东城区（35） ---------- */
+["北京大学红楼","东城区","近现代重要史迹及代表性建筑","民国",1,0,"原北京大学校部所在，1918 年落成。新文化运动与五四运动的策源地，中国近代思想启蒙的重要地标。","现为北京新文化运动纪念馆，可串联五四大街、中国美术馆一并参观。"],
+["天安门","东城区","近现代重要史迹及代表性建筑","明、清",1,1,"明清皇城正门，初名承天门，清顺治八年（1651）改称天安门。北京中轴线重要遗产构成要素。","广场需安检入内；登城楼须提前实名预约。"],
+["人民英雄纪念碑","东城区","近现代重要史迹及代表性建筑","1958 年",1,1,"为纪念近代以来民族独立、人民解放而牺牲的英雄而建，1958 年落成，位于天安门广场中轴线上。","位于天安门广场内，随广场安检进入。"],
+["故宫","东城区","古建筑","明、清",1,1,"明清两代皇宫，又称紫禁城，现存中国规模最大、保存最完整的古代宫殿建筑群，1987 年列入世界遗产。","实行实名预约，周一闭馆（法定节假日除外）；建议由午门进、神武门出。"],
+["天坛","东城区","古建筑","明",1,1,"明清两代皇帝祭天、祈谷之所，中国现存最大的古代祭祀性建筑群，1998 年列入世界遗产。","公园门票与祈年殿、回音壁等「园中园」分开，建议购联票。"],
+["智化寺","东城区","古建筑","明",1,0,"明正统年间太监王振所建家庙，保存有珍贵的明代转轮藏、藻井与「京音乐」，是北京现存明代木构建筑的代表。","现为北京文博交流馆，有京音乐展演，值得留意演出场次。"],
+["国子监","东城区","古建筑","明、清",1,0,"元、明、清三代国家最高学府，与孔庙相邻，辟雍为皇帝讲学之所，是中国古代教育制度的实物见证。","与北京孔庙同一院落，一票通览；近雍和宫、五道营胡同。"],
+["雍和宫","东城区","古建筑","清",1,0,"原为雍正帝潜邸，乾隆年间改为藏传佛教寺院，是北京规模最大的藏传佛教寺庙，万福阁弥勒大佛为木雕珍品。","宗教场所，殿内禁止拍照；香客较多，建议一早前往。"],
+["皇史宬","东城区","古建筑","明",2,0,"明清两代皇家档案库，取「石室金匮」之制，全砖石结构以防火，是中国现存最完整的皇家档案库。","位于南池子大街，通常不对外开放，可在门口观其外观。"],
+["古观象台","东城区","古建筑","明至清",2,0,"明清两代天文观测机构，台上有八件大型铜制天文仪器，是中西天文学交流的珍贵实物。","现为北京古观象台，需购票；临近北京站、明城墙东南角楼。"],
+["北京城东南角楼","东城区","古建筑","明",2,0,"明清北京内城仅存的一座角楼，是明代城防体系的重要遗存，与明城墙遗址公园相连。","登城墙与角楼需购票，黄昏时分光线与视野最佳。"],
+["正阳门","东城区","古建筑","明至清",2,1,"俗称前门，由城楼与箭楼组成，明清北京内城正门，中轴线上的重要节点。","箭楼与城楼分别开放，可登楼俯瞰中轴线与前门大街。"],
+["太庙","东城区","古建筑","明至清",2,1,"明清两代皇帝祭祖的宗庙，中轴线东侧，现存建筑为明代原构，享殿规模宏大。","今为北京市劳动人民文化宫，可购票入内，游人较少。"],
+["社稷坛","东城区","古建筑","明至清",2,1,"明清帝王祭祀社神、稷神之所，中轴线西侧，坛上五色土象征「普天之下，莫非王土」。","今为中山公园，春季郁金香与古柏景致极佳。"],
+["北京孔庙","东城区","古建筑","元至清",2,0,"元、明、清三代祭祀孔子的场所，大成殿为明代建筑，院内元明清进士题名碑是科举制度的珍贵记录。","与国子监相通，注意院内碑林与古柏。"],
+["崇礼住宅","东城区","古建筑","清",2,0,"清末大学士崇礼的宅第，由东、西两院及花园组成，是北京现存较完整的清代官僚宅院。","现为单位使用，一般不对外开放。"],
+["北京鼓楼、钟楼","东城区","古建筑","明、清",4,1,"北京中轴线北端标志性建筑，明代报时中心。鼓楼置更鼓，钟楼悬铜钟，构成「暮鼓晨钟」。","两楼分别售票，鼓楼有定时击鼓表演；周边是什刹海、南锣鼓巷。"],
+["可园","东城区","古建筑","清",5,0,"清末官员文煜所建宅园，是北京现存少有的保存较完整的私家园林之一。","目前多为不开放状态，可在帽儿胡同一带远观。"],
+["孚王府","东城区","古建筑","清",5,0,"原为康熙帝第十三子怡亲王允祥的府邸，后为孚郡王府，是清代王府中规模较大、格局完整者。","现为办公单位使用，不对外开放。"],
+["东交民巷使馆建筑群","东城区","近现代重要史迹及代表性建筑","近代",5,0,"近代各国使馆及银行、兵营、教堂的集中地，含圣米厄尔教堂等，是近代中外关系史的重要实物遗存。","街区可自由漫步，建筑多为单位使用；圣米厄尔教堂可入内参观。"],
+["袁崇焕墓和祠","东城区","古墓葬","明至民国",6,0,"明末名将袁崇焕的祠与墓，祠堂建于清代中期，祠后有明代墓冢，是北京重要的历史纪念地。","位于广渠门内，参观前请确认开放时间。"],
+["地坛","东城区","古建筑","明至清",6,0,"明清两代皇帝「夏至」祭地之所，原名方泽坛，是中国现存最大的祭地之坛。","春节庙会最负盛名；园内银杏大道秋季极美。"],
+["柏林寺","东城区","古建筑","清",6,0,"始建于元至正七年（1347），清代重修。寺内曾藏《龙藏》经版，为北京著名古刹。","现为文物单位使用，不对外开放。"],
+["京师大学堂分科大学旧址","东城区","近现代重要史迹及代表性建筑","清",6,0,"创建于 1905—1911 年，是中国近代最早的国立综合性大学校舍遗存，北京大学前身之一。","现为机关使用，可在德外大街一带观其外观。"],
+["清陆军部和海军部旧址","东城区","近现代重要史迹及代表性建筑","清",6,0,"清末新建的陆军部与海军部办公楼群，欧洲古典复兴风格，是中国近代军事机构建筑的见证。","位于张自忠路，现为高校与人教社使用，不对外开放。"],
+["亚斯立堂","东城区","近现代重要史迹及代表性建筑","清",6,0,"1870 年由美国美以美会创建，1900 年焚毁后于 1906 年重建，是北京现存最大的基督教堂之一。","现为崇文门教堂，礼拜时间开放，平日参观需留意安排。"],
+["协和医学院旧址","东城区","近现代重要史迹及代表性建筑","清至民国",6,0,"建于 1904—1925 年，建筑群仿清代官式宫殿而内部为近代医疗功能，人称「中国式宫殿里的西方医学学府」。","位于帅府园，属院区，一般不对外参观。"],
+["孙中山行馆","东城区","近现代重要史迹及代表性建筑","1924—1925 年",6,0,"原为顾维钧宅，1924 年底孙中山扶病北上驻此，1925 年 3 月 12 日在此逝世。","位于地安门东大街，现为单位使用。"],
+["文天祥祠","东城区","古建筑","明至清",7,0,"南宋名臣文天祥被囚并处死于大都，后人在其就义地附近建祠纪念，祠内留有《正气歌》刻石。","位于府学胡同，与府学胡同小学相邻，注意开放时间。"],
+["普度寺","东城区","古建筑","清",7,0,"原为明末清初摄政王多尔衮的睿亲王府，后改建为藏传佛教寺院，大殿为木构精品。","位于南池子大街，现为文化空间，可入内参观。"],
+["东堂","东城区","近现代重要史迹及代表性建筑","清",7,0,"即王府井天主堂，始建于顺治年间，现存建筑为 1904 年重建，是北京城区四大天主堂之一。","位于王府井步行街旁，教堂前广场是热门取景地。"],
+["基督教中华圣经会北京分会旧址","东城区","近现代重要史迹及代表性建筑","民国",7,0,"1920 年代建造的圣经会办公与售书建筑，是近代基督教在华出版传播活动的实物遗存。","位于东单北大街，外观可辨，内部多不开放。"],
+["北京大学地质学馆旧址","东城区","近现代重要史迹及代表性建筑","民国",7,0,"1930 年代建成的教学建筑，是中国早期现代科学教育设施的代表，梁思成、林徽因参与过相关设计工作。","位于沙滩一带，现为使用中建筑。"],
+["智珠寺","东城区","古建筑","清",8,0,"乾隆年间敕建的藏传佛教寺院，与嵩祝寺相邻，经修缮后成为胡同中的文化空间。","位于沙滩北街，常有艺术展览与咖啡空间，可入内。"],
+["北京站车站大楼","东城区","近现代重要史迹及代表性建筑","1959 年",8,0,"1959 年建成投入使用，是新中国十大建筑之一，双塔对称的立面成为一个时代的城市记忆。","为在用车站，可在站前广场观其外观。"],
+/* ---------- 西城区（42） ---------- */
+["妙应寺白塔","西城区","古建筑","元",1,0,"由尼泊尔工匠阿尼哥主持设计，元至元八年（1271）始建，是中国现存年代最早、规模最大的藏式覆钵塔。","现为白塔寺，寺内可绕塔；周边白塔寺街区值得慢行。"],
+["北海及团城","西城区","古建筑","明、清",1,0,"以琼华岛为中心的大型皇家园林，白塔耸立岛上，团城为元代遗构，是中国现存最古老的皇家园林之一。","旺季建议从南门入园，登琼华岛；冬季可看荷花市场与冰面。"],
+["北京宋庆龄故居","西城区","近现代重要史迹及代表性建筑","1963—1981 年",2,0,"原为醇亲王府花园，宋庆龄自 1963 年在此居住至 1981 年逝世，现为故居纪念馆。","位于后海北沿，需购票，环境清幽。"],
+["恭王府及花园","西城区","古建筑","清",2,0,"清代规模最大的王府，先后为和珅、永璘、奕訢宅邸，有「一座恭王府，半部清代史」之说。","需实名预约；建议东、中、西三路按序参观，后花园不可错过。"],
+["郭沫若故居","西城区","近现代重要史迹及代表性建筑","1963—1978 年",2,0,"原为清代王府马号，郭沫若自 1963 年在此居住至 1978 年逝世，现为纪念馆。","位于前海西街，与恭王府相邻，可一并安排。"],
+["牛街礼拜寺","西城区","古建筑","明至清",2,0,"北京规模最大、历史最久的清真寺，始建于辽，现存建筑以明清为主，融合中国传统与伊斯兰装饰。","宗教场所，请尊重礼拜秩序，非礼拜时间可参观前院。"],
+["天宁寺塔","西城区","古建筑","辽",2,0,"辽代密檐式砖塔，是北京城区现存最古老的建筑之一，塔身浮雕精美，为辽代建筑的典型实例。","位于天宁寺桥附近，寺内可近观塔身细部。"],
+["大高玄殿","西城区","古建筑","明",4,0,"明嘉靖年间敕建的皇家道观，是北京现存唯一的明代皇家道教建筑群。","长期为单位使用，不对外开放。"],
+["历代帝王庙","西城区","古建筑","明、清",4,0,"明清两代祭祀三皇五帝及历代帝王名臣的场所，景德崇圣殿规制高、体量大，是皇家庙宇的代表。","位于阜成门内大街，现为博物馆，可购票参观。"],
+["南堂","西城区","古建筑","清",4,0,"即宣武门天主堂，北京现存最古老的天主教堂，始建于明万历年间，现存建筑为清代重建。","位于宣武门路口，教堂前有广场，可入内参观。"],
+["景山","西城区","古建筑","明、清",5,1,"元、明、清三代皇家苑囿，中轴线制高点。万春亭是俯瞰故宫全景与南北中轴线的最佳位置。","登万春亭需购票，日落前登顶最壮观；南门正对故宫神武门。"],
+["白云观","西城区","古建筑","明、清",5,0,"道教全真派祖庭，始建于唐，现存建筑为明清风格，是北京现存规模最大的道观。","春节期间摸石猴、打金钱眼为传统民俗；平日游人较少。"],
+["法源寺","西城区","古建筑","明、清",5,0,"始建于唐贞观年间，是北京城内历史最悠久的佛寺之一，以丁香花与佛教文物收藏著称。","现为中国佛学院所在，注意寺院参观礼仪。"],
+["先农坛","西城区","古建筑","明、清",5,1,"明清帝王祭祀先农神并举行亲耕典礼之所，中轴线西侧，现存太岁殿、神仓等建筑群。","现为北京古代建筑博物馆，藻井与建筑模型展极值得看。"],
+["利玛窦和外国传教士墓地","西城区","古墓葬","明至清",6,0,"明万历帝赐葬利玛窦于此，其后汤若望、南怀仁等传教士相继葬入，是中西文化交流的重要实物。","位于车公庄大街，现为北京行政学院院内，参观需确认开放。"],
+["德胜门箭楼","西城区","古建筑","明至清",6,0,"明清北京内城九门之一德胜门的箭楼，是北京现存仅有的两座箭楼之一，城防建筑的珍贵实例。","位于北二环德胜门桥北，可登楼参观。"],
+["月坛","西城区","古建筑","明至清",6,0,"明清两代皇帝「秋分」祭祀夜明之神与星宿的场所，原名夕月坛，现存坛台与棂星门等。","今为月坛公园，清晨多为市民晨练，氛围亲切。"],
+["中南海","西城区","古建筑","明至清",6,0,"中海与南海的统称，辽金以来即为皇家苑囿，元明清三代不断营建，园中瀛台、紫光阁等景致著名。","现为国家机关驻地，不对外开放。"],
+["关岳庙","西城区","古建筑","清",6,0,"原为醇贤亲王祠堂，民国年间在后寝祠塑关羽、岳飞像而改称关岳庙，中轴对称、格局严整。","位于鼓楼西大街，现为西藏自治区人民政府驻京办事处，不对外开放。"],
+["醇亲王府","西城区","古建筑","清",6,0,"原为明珠宅第，乾隆年间改建为王府，是清末代皇帝溥仪的出生地，府邸与花园并具。","现为宗教事务部门使用，不对外开放。"],
+["广济寺","西城区","古建筑","清",6,0,"京城「内八刹」之一，始建于金，明天顺年间重建，是中国佛教协会所在地。","可入内礼佛，注意保持安静，勿喧哗拍照。"],
+["安徽会馆","西城区","古建筑","清",6,0,"李鸿章兄弟于同治十年（1871）创建，是京城最著名的会馆之一，原有戏楼与花园，规模宏大。","位于后孙公园胡同，经修缮后部分开放，可关注活动信息。"],
+["报国寺","西城区","古建筑","清",6,0,"始建于辽，现存建筑多为清乾隆年间重修，是京师南城巨刹之一，寺内有顾亭林祠。","长期以古旧书市闻名，现为文化街区，可自由参观。"],
+["清农事试验场旧址","西城区","近现代重要史迹及代表性建筑","清",6,0,"1906 年设立的近代农事试验机构，存畅观楼、鬯春堂等建筑，是中国近代农业科学的起点之一。","现位于北京动物园内，购动物园门票即可见。"],
+["西什库教堂","西城区","近现代重要史迹及代表性建筑","清",6,0,"即北堂，北京城区最大的天主教堂，法国哥特式风格，两侧有中式碑亭，中西合璧。","位于西什库大街，可入内参观，弥撒时间请勿打扰。"],
+["国立蒙藏学校旧址","西城区","近现代重要史迹及代表性建筑","清",6,0,"原为明清府邸与会馆，1913 年开办蒙藏专门学校，是中国共产党历史上第一个蒙古族党支部的诞生地。","现已修缮开放，可预约参观展览。"],
+["北京国会旧址","西城区","近现代重要史迹及代表性建筑","清至民国",6,0,"1913 年建成，为民国初年国会参众两院议事场所，存国会议场与「圆楼」等建筑。","现为新华社等单位使用，不对外开放。"],
+["京师女子师范学堂旧址","西城区","近现代重要史迹及代表性建筑","清至民国",6,0,"1909 年建成，是中国近代最早培养女教师的学堂之一，后期成为女子高等师范学校校址。","现为鲁迅中学使用，一般不对外开放。"],
+["国民政府财政部印刷局旧址","西城区","近现代重要史迹及代表性建筑","清至民国",6,0,"前身为清度支部印刷局，是中国采用雕刻凹版设备印钞的第一家印钞厂，1915 年建成投产。","位于白纸坊，现为印钞企业使用，不对外开放。"],
+["大栅栏商业建筑","西城区","近现代重要史迹及代表性建筑","清至民国",6,0,"含瑞蚨祥、谦祥益、祥义号门面与劝业场等，是清末民初北京商业建筑的集中遗存。","大栅栏街区可自由漫步，劝业场外观值得细看。"],
+["北平图书馆旧址","西城区","近现代重要史迹及代表性建筑","民国",6,0,"1931 年落成，仿清代官式宫殿楼阁而作，绿琉璃庑殿顶，是中国近代图书馆建筑的杰作。","现为国家图书馆古籍馆，需持证或按开放安排进入。"],
+["北京鲁迅旧居","西城区","近现代重要史迹及代表性建筑","1924—1926 年",6,0,"鲁迅 1924 年亲自设计改建的小型四合院，1924—1926 年在此居住，写下《野草》等作品。","位于阜成门内，属北京鲁迅博物馆，凭票参观，周一闭馆。"],
+["万松老人塔","西城区","古建筑","元",7,0,"元代名僧万松行秀的墓塔，是北京城区仅存的元代砖塔，为砖塔胡同得名之源。","现为砖塔胡同内的阅读空间，可入内小坐。"],
+["克勤郡王府","西城区","古建筑","清",7,0,"清代八大铁帽子王之一克勤郡王的府邸，现存中路建筑与花园，是清代王府规制的实例。","位于新文化街，现为学校使用，不对外开放。"],
+["基督教中华圣公会教堂","西城区","近现代重要史迹及代表性建筑","清",7,0,"1907 年建成，是华北地区最早的中华圣公会教堂，中西合璧的建筑形式别具一格。","位于佟麟阁路，现为模范书局·诗空间，可入内。"],
+["西交民巷近代银行建筑群","西城区","近现代重要史迹及代表性建筑","民国",7,0,"含中央银行、大陆银行、保商银行等旧址，是近代北京「金融一条街」的实物见证。","沿西交民巷步行即可观其外观，部分建筑现为钱币博物馆。"],
+["辅仁大学本部旧址","西城区","近现代重要史迹及代表性建筑","清至民国",7,0,"1920 年代建成，由中国建筑师设计、融合中西风格的教学楼群，是近代高等教育建筑的代表。","位于定阜街，现为北京师范大学继续教育与教师培训学院。"],
+["盛新中学与佑贞女中旧址","西城区","近现代重要史迹及代表性建筑","清至民国",7,0,"原为教会所办中学，建筑呈近代折中主义风格，后曾为北海中学校址。","现为北京四中初中部使用，不对外开放。"],
+["李大钊旧居","西城区","近现代重要史迹及代表性建筑","民国",7,0,"李大钊 1920—1924 年在北京的住所，是中国共产党早期革命活动的重要地点之一。","位于文华胡同，可预约参观。"],
+["梅兰芳旧居","西城区","近现代重要史迹及代表性建筑","1951—1961 年",7,0,"梅兰芳自 1951 年在此居住至 1961 年逝世，是一座典型的北京四合院，现为纪念馆。","位于护国寺街，需购票，周一闭馆。"],
+["长椿寺","西城区","古建筑","清",8,0,"始建于明万历二十年（1592），为明神宗生母李太后所建，有「京师首刹」之称。","现为北京宣南文化博物馆，可免费预约参观。"],
+["北京湖广会馆","西城区","古建筑","清至民国",8,0,"清代湖南、湖北籍士人聚会之所，现存戏楼、乡贤祠等，是北京现存规模较大的会馆戏楼。","现为北京戏曲博物馆，常有戏曲演出，可购票观演。"],
+/* ---------- 朝阳区（4） ---------- */
+["北京东岳庙","朝阳区","古建筑","元至清",4,0,"元代敕建的道教正一派庙宇，主祀东岳大帝，碑刻与神像陈列丰富，是华北地区重要的道教宫观。","现为北京民俗博物馆，位于朝阳门外大街，可购票参观。"],
+["清净化城塔","朝阳区","古建筑","清",5,0,"乾隆年间为纪念六世班禅而建，塔身雕刻精美，是北京现存最精美的清代佛塔之一。","位于西黄寺博物馆内，仅周末预约开放，名额有限。"],
+["日坛","朝阳区","古建筑","明至清",6,0,"明清两代皇帝「春分」祭祀太阳之所，原名朝日坛，坛墙方形，现存拜台与棂星门等。","今为日坛公园，紧邻使馆区与雅宝路，交通便利。"],
+["四九一电台旧址","朝阳区","近现代重要史迹及代表性建筑","民国",7,0,"1949 年启用的广播发射台，是新中国对外广播事业的起点，具有重要的新闻传播史价值。","位于双桥一带，属使用单位，不对外开放。"],
+/* ---------- 海淀区（20） ---------- */
+["真觉寺金刚宝座","海淀区","古建筑","明",1,0,"俗称五塔寺，明成化年间建成，仿印度菩提伽耶大塔形制，座上五塔，是明代中外建筑交流的杰作。","现为北京石刻艺术博物馆，藏北京地区石刻精品，周一闭馆。"],
+["颐和园","海淀区","古建筑","清",1,1,"以万寿山、昆明湖为主体的皇家园林，前身清漪园，1888 年改名颐和园，1998 年列入世界遗产。","面积大，建议东宫门进、北宫门出；长廊、佛香阁、十七孔桥不可错过。"],
+["圆明园遗址","海淀区","古遗址","清",3,0,"清代皇家御园，由圆明园、长春园、绮春园组成，1860 年遭英法联军焚毁，是中国近代史的重要见证地。","西洋楼大水法遗址最富历史感；园区开阔，可租自行车。"],
+["觉生寺","海淀区","古建筑","清",4,0,"俗称大钟寺，清雍正年间敕建，寺内永乐大钟重约 46 吨，是中国现存最大的青铜钟之一。","现为大钟寺古钟博物馆，钟表与古钟专题展值得细看。"],
+["景泰陵","海淀区","古墓葬","明",5,0,"明代第七帝景泰帝朱祁钰的陵寝，是明代帝陵中唯一不在十三陵者，反映了特殊的政治变故。","位于香山南路，一般不对外开放，可在周边观其格局。"],
+["碧云寺","海淀区","古建筑","明、清",5,0,"香山北麓古刹，始建于元，明清重修，寺后金刚宝座塔为乾隆年间所建，孙中山纪念堂曾设于此。","含于香山公园门票内，寺内需另购票进入部分院落。"],
+["大慧寺","海淀区","古建筑","明",5,0,"明正德年间建，大悲宝殿内的明代彩塑二十八诸天像高大精美，是明代彩塑艺术的珍品。","现为文物保管单位，长期不对外开放。"],
+["十方普觉寺","海淀区","古建筑","清",5,0,"俗称卧佛寺，始建于唐，因元代铜铸卧佛而闻名，清代成为皇家行宫寺院。","位于北京植物园内，需购植物园门票，春季可观玉兰。"],
+["未名湖燕园建筑","海淀区","近现代重要史迹及代表性建筑","近代",5,0,"燕京大学时期建成的校园建筑群，中西合璧，与未名湖、博雅塔共同构成经典校园景观。","位于北京大学校内，入校需按学校预约政策。"],
+["清华大学早期建筑","海淀区","近现代重要史迹及代表性建筑","近代",5,0,"1910—1930 年代建成的校园建筑，含清华学堂、大礼堂等，是中国早期近代大学建筑的典范。","位于清华大学校内，入校需按学校预约政策。"],
+["大觉寺","海淀区","古建筑","明至清",6,0,"始建于辽代，依山而建、坐西朝东，保留契丹「朝日」习俗，寺内千年银杏与玉兰著称。","位于苏家坨镇，需购票，秋日银杏极佳。"],
+["静明园","海淀区","古建筑","清",6,0,"即玉泉山，康熙年间改称静明园，园内佛塔与园林建筑分布于山间，是「三山五园」之一。","现为玉泉山区域，不对外开放。"],
+["健锐营演武厅","海淀区","古建筑","清",6,0,"乾隆十四年（1749）为训练云梯兵平定西南而建，含团城、演武厅、碉楼，格局完整。","位于香山南路红旗村，需购票，较为清静。"],
+["万寿寺","海淀区","古建筑","清",6,0,"明万历五年（1577）创建，清代多次扩建，为京西皇家大寺，分中东西三路，东路为方丈院。","现为北京艺术博物馆，需购票，藏品与建筑俱佳。"],
+["辛亥滦州起义纪念园","海淀区","近现代重要史迹及代表性建筑","民国",6,0,"1937 年落成，纪念 1912 年滦州起义死难烈士，含纪念塔、碑亭、石幢等，依山而建。","位于温泉镇，现为医院院内，可询问进入方式。"],
+["摩诃庵","海淀区","古建筑","明",7,0,"明嘉靖年间建，现存大殿与明代彩塑、壁画，是京西明代寺院的珍贵遗存。","位于八里庄小学内，一般不对外开放。"],
+["慈寿寺塔","海淀区","古建筑","明",7,0,"明万历年间为慈圣皇太后所建，原名永安万寿塔，八面十三层密檐砖塔，是京西地标。","现为玲珑公园内，可自由参观，秋季银杏相伴。"],
+["醇亲王墓","海淀区","古墓葬","清",8,0,"醇亲王奕譞之墓，俗称七王坟，位于妙高峰下，陵园布局完整，墓前古树成荫。","现属商务部绿化基地，不对外开放。"],
+["双清别墅","海淀区","近现代重要史迹及代表性建筑","1949 年",8,0,"1949 年 3 月至 6 月毛泽东在香山的办公与居住地，是新中国成立前重要历史事件的见证地。","含于香山公园门票内，需另行预约参观。"],
+["宋庆龄儿童科学技术馆","海淀区","近现代重要史迹及代表性建筑","1986 年",8,0,"1986 年建成开放，是新中国最早的儿童科学教育设施之一，反映了改革开放初期的科教事业。","位于玉渊潭南岸一带，参观需确认开放安排。"],
+/* ---------- 丰台区（4） ---------- */
+["卢沟桥","丰台区","近现代重要史迹及代表性建筑","金代始建，明、清修葺",1,0,"始建于金大定年间，是北京现存最古老的联拱石桥，桥上石狮数以百计；1937 年「七七事变」在此爆发。","含宛平城，中国人民抗日战争纪念馆在城内，可一并参观。"],
+["金中都水关遗址","丰台区","古遗址","金",5,0,"金中都城墙的水关遗存，是研究金代都城排水系统与城市布局的重要实物资料。","现为北京辽金城垣博物馆，位于右安门外，可购票参观。"],
+["镇岗塔","丰台区","古建筑","金",7,0,"金代实心花塔，塔身密布佛龛与浮雕造像，是北京地区现存年代较早的佛塔之一。","位于云岗一带，可近观，周边环境较安静。"],
+["长辛店“二七”大罢工旧址","丰台区","近现代重要史迹及代表性建筑","民国",7,0,"含劳动补习学校、工人俱乐部、留法勤工俭学预备班等旧址，是京汉铁路工人大罢工的重要现场。","位于长辛店大街，多为在使用建筑，街区可步行参观。"],
+/* ---------- 石景山区（3） ---------- */
+["法海寺","石景山区","古建筑","明",2,0,"明正统年间敕建，大雄宝殿内的明代壁画被誉为「明代壁画之最」，与敦煌、永乐宫壁画并称。","壁画需另购票并按场次入内，殿内严禁拍照，用冷光手电观赏。"],
+["承恩寺","石景山区","古建筑","明至清",6,0,"始建于明正德八年（1513），院墙四角设碉楼、下通地道，形制在明清寺院中极为罕见。","现为燕京八绝博物馆，需预约参观。"],
+["北京市八宝山革命公墓","石景山区","近现代重要史迹及代表性建筑","近现代",7,0,"原为明代护国寺旧址，1950 年辟为革命公墓，是全国规格建制最高的园林式公墓，安葬众多革命先辈与英模。","需严格遵守参观规定，保持肃穆，非开放区域请勿前往。"],
+/* ---------- 门头沟区（4） ---------- */
+["戒台寺","门头沟区","古建筑","辽至清",4,0,"始建于隋，以戒坛著称，是中国北方著名的佛教律宗寺院，古松、牡丹与戒坛并称三绝。","位于永定镇，需购票；与潭柘寺可同日串联。"],
+["潭柘寺","门头沟区","古建筑","明、清",5,0,"始建于西晋，是北京最古老的佛寺之一，民间有「先有潭柘寺，后有北京城」之说，帝王树闻名。","位于潭柘寺镇，需购票，秋日银杏与古松尤美。"],
+["爨底下村古建筑群","门头沟区","古建筑","清",6,0,"明清古驿道上的山村聚落，现存清代山地四合院 70 余座，依山就势、层层叠落，被称为「北京最美古村」。","位于斋堂镇，需购票，建议住一晚看星空与晨雾。"],
+["灵岳寺","门头沟区","古建筑","元至清",7,0,"始建于唐，现存建筑保留元明风格，地处深山谷地，是京西山区古刹的重要实例。","位于斋堂镇灵岳寺村，交通较远，建议自驾并确认开放。"],
+/* ---------- 房山区（11） ---------- */
+["房山云居寺塔及石经","房山区","古建筑","隋、唐、辽、金",1,0,"以「石经、纸经、木板经」三绝著称，隋代静琬始刻石经延续千年，被誉为「北京的敦煌」。","两处点位：云居寺与石经山，建议自驾；寺内石经地宫不可错过。"],
+["周口店遗址","房山区","古遗址","旧石器时代",1,1,"「北京人」头盖骨发现地，是世界范围内同时代遗址中材料最丰富的古人类遗址，1987 年列入世界遗产。","位于周口店镇，遗址公园与博物馆分设，建议预留半天。"],
+["琉璃河遗址","房山区","古遗址","西周",3,0,"西周燕国都城遗址，出土克盉、克罍等重要青铜器，是北京地区建城史的重要实证。","现为琉璃河遗址公园与西周燕都遗址博物馆，可一并参观。"],
+["万佛堂、孔水洞石刻及塔","房山区","古建筑","隋、唐至明",5,0,"孔水洞内保留隋唐石刻造像，洞外有辽代花塔与明代万佛堂，是北京少见的石窟寺与石刻遗存。","位于河北镇，比较偏僻，建议自驾并确认开放时间。"],
+["十字寺遗址","房山区","古遗址","元",6,0,"原为佛寺，元代改为景教（基督教聂斯托利派）寺院，是北京已知唯一的元代景教寺庙遗址。","位于周口店镇车厂村，可与金陵同线参观。"],
+["金陵","房山区","古墓葬","金",6,0,"金代帝王陵寝，陵区面积约 60 平方公里，是北京地区年代最早、规模最大的帝王陵，已发掘睿陵。","位于大房山，需购票，遗址与博物馆值得细看。"],
+["良乡多宝佛塔","房山区","古建筑","辽",7,0,"俗称良乡塔，辽代八角五级楼阁式砖塔，是北京现存楼阁式塔中年代较早者，曾为南北往来的地标。","位于良乡镇，塔身可近观，周边为城市街区。"],
+["姚广孝墓塔","房山区","古建筑","明",7,0,"明初著名政治家、僧人姚广孝之墓塔，八角九级密檐砖塔，形制规整，是明代墓塔的代表。","位于青龙湖镇一带，位置较偏，建议自驾。"],
+["琉璃河大桥","房山区","古建筑","明",7,0,"明代多孔石拱桥，横跨琉璃河，是古代北京通往南方的官道桥梁，与琉璃河遗址相邻。","位于琉璃河镇，可步行观桥，注意来往车辆。"],
+["房山大白玉塘采石场遗址","房山区","古遗址","隋、唐",7,0,"隋唐时期开采汉白玉的采石场遗存，云居寺石经所用石材多出于此，现已并入房山云居寺塔及石经。","位于大石窝镇，可与云居寺同线参观。"],
+["原子能“一堆一器”旧址","房山区","近现代重要史迹及代表性建筑","1958 年",8,0,"中国第一座重水反应堆与第一台回旋加速器所在地，是中国核工业与核科学事业的起点。","位于中国原子能科学研究院内，一般不对外开放。"],
+/* ---------- 昌平区（3） ---------- */
+["居庸关云台","昌平区","古建筑","元",1,0,"原为元代过街塔的基座，券洞内壁满刻六种文字经文与四大天王浮雕，是元代石刻与多民族文字的重要遗存。","位于居庸关关城内，与八达岭长城同线，可顺路参观。"],
+["十三陵","昌平区","古墓葬","明",1,1,"明代十三位皇帝的陵寝群，是中国现存规模最大的帝王陵墓建筑群，2003 年作为「明清皇家陵寝」列入世界遗产。","推荐路线：神路→长陵→定陵（地宫）→昭陵；各陵单独售票。"],
+["银山塔林","昌平区","古建筑","金至元",2,0,"辽金以来寺院墓塔群，现存砖石塔多座，与松林山色相映，是北京现存最集中的古塔林之一。","位于延寿镇，需购票，秋季层林尽染时最美。"],
+/* ---------- 通州区（1） ---------- */
+["通州近代学校建筑群","通州区","近现代重要史迹及代表性建筑","清至民国",7,0,"含潞河中学、富育女校、华美学校旧址，是近代通州新式教育的集中遗存，中西合璧的建筑风格鲜明。","位于通州城区，潞河中学校园内建筑可询问进入方式。"],
+/* ---------- 顺义区（1） ---------- */
+["焦庄户地道战遗址","顺义区","近现代重要史迹及代表性建筑","民国",7,0,"抗日战争时期焦庄户村民利用地道开展游击战，现存地道与瞭望楼、民居等，是抗战史迹的重要实例。","现为纪念馆，位于龙湾屯镇，建议自驾前往。"],
+/* ---------- 平谷区（1） ---------- */
+["上宅遗址","平谷区","古遗址","新石器时代",8,0,"北京东部重要的新石器时代遗址，出土陶器、石器丰富，为研究北京史前文化与聚落提供了关键材料。","现为上宅文化陈列馆，位于金海湖镇，建议自驾。"],
+/* ---------- 延庆区（1） ---------- */
+["延庆古崖居","延庆区","古遗址","年代待考",7,0,"在陡峭岩壁上开凿的成片洞室群，规模宏大、用途与开凿者至今未有定论，被称为「中华第一迷宫」。","位于张山营镇，需购票，洞室需攀爬，注意安全。"],
+/* ---------- 跨区（5） ---------- */
+["长城","跨区（延庆·昌平·密云·怀柔·平谷·门头沟）","古建筑","明（含北齐长城）",1,1,"世界文化遗产。北京境内长城绵延 500 余公里，自北齐至明代不断修筑，八达岭、居庸关、慕田峪、司马台各具特色。","八达岭需预约且人流大；慕田峪较舒缓，司马台夜景著名，箭扣为未开发野长城，禁止擅自攀爬。"],
+["大运河","跨区（东城·西城·朝阳·海淀·昌平·通州）","古建筑","春秋至中华人民共和国",7,1,"世界文化遗产。北京段含白浮泉、广源闸、高梁闸、什刹海、玉河故道、南新仓、通州燃灯塔、张家湾城墙等十余处文物点。","点位分散，可分通州段（燃灯塔、燃灯佛舍利塔、大运河森林公园）与城区段（什刹海、南新仓）两次走。"],
+["京张铁路南口段至八达岭段","跨区（昌平·延庆）","近现代重要史迹及代表性建筑","清至民国",7,0,"詹天佑主持修建的京张铁路遗存，含「人」字形线路、青龙桥车站等，是中国近代工程自主创新的标志。","青龙桥车站设有詹天佑纪念馆，可与八达岭长城同线参观。"],
+["元大都城墙遗址","跨区（朝阳·海淀）","古遗址","元",6,0,"元代大都城外郭城土城遗存，是元大都城规模与营建技术的重要实证，今辟为元大都城垣遗址公园。","春季海棠花溪闻名，沿小月河可骑行或步行，全线免费开放。"],
+["明北京城城墙遗存","跨区（东城·西城）","古建筑","明",7,0,"明代北京内城城墙残段，含东便门段、左安门值房与西便门段，是明清北京城格局的实物边界。","东便门段（明城墙遗址公园）可登城；西便门段为街边遗存，可顺路观看。"]
+];
+
+const CAT_COLOR = {
+  "古建筑":"#A33229",
+  "近现代重要史迹及代表性建筑":"#3B5B4A",
+  "古遗址":"#B08A46",
+  "古墓葬":"#3E5670",
+  "石窟寺及石刻":"#7A6A8C",
+  "其他":"#8C8479"
+};
+const CAT_SHORT = {
+  "古建筑":"古建筑",
+  "近现代重要史迹及代表性建筑":"近现代史迹",
+  "古遗址":"古遗址",
+  "古墓葬":"古墓葬",
+  "石窟寺及石刻":"石窟寺及石刻",
+  "其他":"其他"
+};
+const BATCH_YEAR = {1:"1961",2:"1982",3:"1988",4:"1996",5:"2001",6:"2006",7:"2013",8:"2019"};
+
+const SITES = RAW.map(function(r,i){
+  return {
+    id:i, name:r[0], dist:r[1], cat:r[2], era:r[3], batch:r[4], wh:r[5]===1,
+    desc:r[6], tip:r[7]
+  };
+});
+
+/* ============ 中轴线剪影 ============ */
+function roof(cx,y,hw,h,k){
+  k = k||0.52;
+  return "M "+(cx-hw)+" "+y+
+         " Q "+(cx-hw*k)+" "+(y-h*0.78)+" "+cx+" "+(y-h)+
+         " Q "+(cx+hw*k)+" "+(y-h*0.78)+" "+(cx+hw)+" "+y+" Z";
+}
+function drawSkyline(elW){
+  const W=1200, base=272;
+  let s="";
+  const ink="#9A8C74", inkDark="#7E6F58", line="#D6CCB9";
+
+  // 远山
+  s += '<path d="M-40 '+(base-10)+' Q 120 '+(base-72)+' 260 '+(base-26)+' Q 380 '+(base-4)+' 470 '+(base-40)+
+       ' Q 560 '+(base-78)+' 690 '+(base-30)+' Q 800 '+(base-2)+' 930 '+(base-46)+
+       ' Q 1060 '+(base-84)+' 1240 '+(base-24)+' L 1240 '+base+' L -40 '+base+' Z" fill="#E7DECC"/>';
+
+  // 中轴线
+  s += '<line x1="596" y1="16" x2="596" y2="'+base+'" stroke="'+inkDark+'" stroke-width="1.2" stroke-dasharray="7 6" opacity=".7"/>';
+  s += '<circle cx="596" cy="16" r="3.4" fill="#A33229"/>';
+
+  // 钟鼓楼
+  s += '<rect x="66" y="'+(base-46)+'" width="60" height="46" fill="'+ink+'"/>';
+  s += '<path d="'+roof(96, base-46, 40, 20)+'" fill="'+inkDark+'"/>';
+  s += '<rect x="74" y="'+(base-96)+'" width="44" height="34" fill="'+ink+'"/>';
+  s += '<path d="'+roof(96, base-96, 32, 20)+'" fill="'+inkDark+'"/>';
+  s += '<rect x="90" y="'+(base-116)+'" width="12" height="8" fill="'+inkDark+'"/>';
+
+  // 景山
+  s += '<path d="M132 '+base+' Q 205 '+(base-84)+' 288 '+base+' Z" fill="#D6CBB3"/>';
+  s += '<rect x="199" y="'+(base-92)+'" width="18" height="12" fill="'+ink+'"/>';
+  s += '<path d="'+roof(208, base-92, 15, 11)+'" fill="'+inkDark+'"/>';
+
+  // 故宫
+  s += '<rect x="316" y="'+(base-16)+'" width="216" height="16" fill="'+ink+'"/>';
+  s += '<rect x="336" y="'+(base-52)+'" width="176" height="36" fill="'+ink+'"/>';
+  s += '<path d="'+roof(424, base-52, 100, 30)+'" fill="'+inkDark+'"/>';
+  s += '<rect x="366" y="'+(base-92)+'" width="116" height="40" fill="'+ink+'"/>';
+  s += '<path d="'+roof(424, base-92, 74, 32)+'" fill="'+inkDark+'"/>';
+
+  // 天安门
+  s += '<rect x="520" y="'+(base-44)+'" width="152" height="44" fill="'+ink+'"/>';
+  s += '<rect x="548" y="'+(base-74)+'" width="96" height="30" fill="'+ink+'"/>';
+  s += '<path d="'+roof(596, base-74, 62, 26)+'" fill="'+inkDark+'"/>';
+  s += '<rect x="568" y="'+(base-24)+'" width="14" height="24" fill="#F7F4ED"/>';
+  s += '<rect x="591" y="'+(base-24)+'" width="14" height="24" fill="#F7F4ED"/>';
+  s += '<rect x="614" y="'+(base-24)+'" width="14" height="24" fill="#F7F4ED"/>';
+
+  // 正阳门
+  s += '<rect x="700" y="'+(base-40)+'" width="112" height="40" fill="'+ink+'"/>';
+  s += '<rect x="720" y="'+(base-66)+'" width="72" height="26" fill="'+ink+'"/>';
+  s += '<path d="'+roof(756, base-66, 48, 22)+'" fill="'+inkDark+'"/>';
+  s += '<rect x="740" y="'+(base-20)+'" width="13" height="20" fill="#F7F4ED"/>';
+
+  // 天坛祈年殿
+  s += '<rect x="866" y="'+(base-34)+'" width="148" height="34" fill="'+ink+'"/>';
+  s += '<path d="'+roof(940, base-34, 86, 26)+'" fill="'+inkDark+'"/>';
+  s += '<rect x="892" y="'+(base-70)+'" width="96" height="36" fill="'+ink+'"/>';
+  s += '<path d="'+roof(940, base-70, 62, 24)+'" fill="'+inkDark+'"/>';
+  s += '<rect x="912" y="'+(base-102)+'" width="56" height="32" fill="'+ink+'"/>';
+  s += '<path d="'+roof(940, base-102, 40, 26)+'" fill="'+inkDark+'"/>';
+  s += '<rect x="936" y="'+(base-126)+'" width="8" height="10" fill="'+inkDark+'"/>';
+
+  // 永定门
+  s += '<rect x="1030" y="'+(base-38)+'" width="132" height="38" fill="'+ink+'"/>';
+  s += '<rect x="1052" y="'+(base-64)+'" width="88" height="26" fill="'+ink+'"/>';
+  s += '<path d="'+roof(1096, base-64, 58, 22)+'" fill="'+inkDark+'"/>';
+  s += '<rect x="1074" y="'+(base-18)+'" width="13" height="18" fill="#F7F4ED"/>';
+  s += '<rect x="1096" y="'+(base-18)+'" width="13" height="18" fill="#F7F4ED"/>';
+
+  // 地平线
+  s += '<line x1="0" y1="'+base+'" x2="'+W+'" y2="'+base+'" stroke="'+line+'" stroke-width="1.5"/>';
+  s += '<line x1="0" y1="'+(base+9)+'" x2="'+W+'" y2="'+(base+9)+'" stroke="'+line+'" stroke-width="1" opacity=".8"/>';
+
+  // 节点文字
+  const labels=[[96,"钟鼓楼"],[208,"景山"],[424,"故宫"],[596,"天安门"],[756,"正阳门"],[940,"天坛"],[1096,"永定门"]];
+  labels.forEach(function(l){
+    s+='<text x="'+l[0]+'" y="'+(base+30)+'" text-anchor="middle" font-size="13" fill="#8C8272" font-family="Songti SC,serif" letter-spacing="1">'+l[1]+'</text>';
+  });
+  return s;
+}
+document.getElementById("skyline").innerHTML = drawSkyline();
+
+/* 弹窗顶部横幅：按类别做图案 */
+function artFor(site){
+  const c = CAT_COLOR[site.cat] || "#B08A46";
+  let g="";
+  if(site.cat==="古建筑"){
+    g = '<path d="'+roof(330,96,150,52)+'" fill="'+c+'" opacity=".18"/>'+
+        '<path d="'+roof(330,72,110,44)+'" fill="'+c+'" opacity=".26"/>'+
+        '<rect x="215" y="96" width="230" height="22" fill="'+c+'" opacity=".16"/>';
+  }else if(site.cat==="古墓葬"){
+    g = '<path d="M150 130 Q 330 34 510 130 Z" fill="'+c+'" opacity=".2"/>'+
+        '<rect x="300" y="104" width="60" height="26" fill="'+c+'" opacity=".28"/>';
+  }else if(site.cat==="古遗址"){
+    g = '<path d="M120 118 L200 76 L268 108 L346 62 L430 112 L540 74 L560 118 Z" fill="'+c+'" opacity=".18"/>'+
+        '<rect x="0" y="118" width="660" height="40" fill="'+c+'" opacity=".1"/>';
+  }else{
+    g = '<rect x="180" y="34" width="300" height="84" fill="'+c+'" opacity=".14"/>'+
+        '<rect x="210" y="52" width="46" height="66" fill="'+c+'" opacity=".22"/>'+
+        '<rect x="274" y="42" width="46" height="76" fill="'+c+'" opacity=".28"/>'+
+        '<rect x="338" y="52" width="46" height="66" fill="'+c+'" opacity=".22"/>'+
+        '<rect x="402" y="42" width="46" height="76" fill="'+c+'" opacity=".26"/>';
+  }
+  return g + '<line x1="0" y1="118" x2="660" y2="118" stroke="'+c+'" stroke-width="2" opacity=".3"/>'+
+         '<circle cx="330" cy="30" r="26" fill="'+c+'" opacity=".1"/>';
+}
+
+/* ============ 统计与图表 ============ */
+function countBy(arr,key){
+  const m={};
+  arr.forEach(function(s){ m[s[key]]=(m[s[key]]||0)+1; });
+  return m;
+}
+const DIST_ORDER=["东城区","西城区","海淀区","房山区","朝阳区","丰台区","门头沟区","昌平区","石景山区","通州区","顺义区","平谷区","延庆区","跨区（东城·西城·朝阳·海淀·昌平·通州）","跨区（延庆·昌平·密云·怀柔·平谷·门头沟）","跨区（昌平·延庆）","跨区（朝阳·海淀）","跨区（东城·西城）"];
+const DIST_LABEL={"跨区（东城·西城·朝阳·海淀·昌平·通州）":"大运河（跨区）","跨区（延庆·昌平·密云·怀柔·平谷·门头沟）":"长城（跨区）","跨区（昌平·延庆）":"京张铁路（跨区）","跨区（朝阳·海淀）":"元大都城垣（跨区）","跨区（东城·西城）":"明城墙（跨区）"};
+
+(function renderDist(){
+  const m=countBy(SITES,"dist");
+  const rows=Object.keys(m).map(function(k){return {k:k,v:m[k]};})
+    .sort(function(a,b){
+      const ia=DIST_ORDER.indexOf(a.k), ib=DIST_ORDER.indexOf(b.k);
+      return (ia<0?99:ia)-(ib<0?99:ib);
+    });
+  const max=Math.max.apply(null,rows.map(function(r){return r.v;}));
+  document.getElementById("distBars").innerHTML = rows.map(function(r,i){
+    const lb = DIST_LABEL[r.k] || r.k;
+    return '<div class="bar-row"><span class="lb" title="'+r.k+'">'+lb+'</span>'+
+      '<span class="track"><i class="fill" data-w="'+(r.v/max*100)+'" style="display:block"></i></span>'+
+      '<span class="vl">'+r.v+'</span></div>';
+  }).join("");
+})();
+
+(function renderCat(){
+  const m=countBy(SITES,"cat");
+  const rows=Object.keys(m).map(function(k){return {k:k,v:m[k]};}).sort(function(a,b){return b.v-a.v;});
+  const total=SITES.length;
+  let acc=0, R=54, C=2*Math.PI*R, segs="";
+  rows.forEach(function(r){
+    const frac=r.v/total;
+    const c=CAT_COLOR[r.k]||"#8C8479";
+    segs+='<circle r="'+R+'" cx="75" cy="75" fill="none" stroke="'+c+'" stroke-width="19" '+
+      'stroke-dasharray="'+(frac*C-1.5)+' '+(C-frac*C+1.5)+'" '+
+      'stroke-dashoffset="'+(-acc*C)+'" transform="rotate(-90 75 75)"></circle>';
+    acc+=frac;
+  });
+  document.getElementById("donut").innerHTML =
+    segs+'<text x="75" y="70" text-anchor="middle" font-size="27" font-family="Songti SC,serif" fill="#241F1B">'+total+'</text>'+
+    '<text x="75" y="89" text-anchor="middle" font-size="10.5" fill="#8C8479" letter-spacing="1">处国保</text>';
+  document.getElementById("catLegend").innerHTML = rows.map(function(r){
+    return '<div><i style="background:'+(CAT_COLOR[r.k]||"#8C8479")+'"></i>'+CAT_SHORT[r.k]+'<b>'+r.v+'</b></div>';
+  }).join("");
+})();
+
+(function renderBatch(){
+  const m=countBy(SITES,"batch");
+  const rows=[1,2,3,4,5,6,7,8].map(function(k){return {k:k,v:m[k]||0};});
+  const max=Math.max.apply(null,rows.map(function(r){return r.v;}));
+  document.getElementById("batchBars").innerHTML = rows.map(function(r){
+    return '<div class="bar-row"><span class="lb">第'+["一","二","三","四","五","六","七","八"][r.k-1]+'批 '+BATCH_YEAR[r.k]+'</span>'+
+      '<span class="track"><i class="fill gold" data-w="'+(r.v/max*100)+'" style="display:block"></i></span>'+
+      '<span class="vl">'+r.v+'</span></div>';
+  }).join("");
+})();
+
+/* 条形动画 */
+setTimeout(function(){
+  document.querySelectorAll(".fill").forEach(function(el){
+    el.style.width = el.getAttribute("data-w")+"%";
+  });
+},160);
+
+/* ============ 世界遗产 ============ */
+const WORLD=[
+  ["1987","长城","北京境内绵延 500 余公里，八达岭、慕田峪、司马台、居庸关等段各具特色。"],
+  ["1987","北京故宫","明清两代皇宫，现存世界规模最大的古代宫殿建筑群，藏品逾 186 万件（套）。"],
+  ["1987","周口店北京人遗址","「北京人」头盖骨发现地，人类演化史研究的里程碑式遗址。"],
+  ["1998","北京皇家祭坛 · 天坛","明清帝王祭天祈谷之所，中国现存最大的古代祭祀性建筑群。"],
+  ["1998","北京皇家园林 · 颐和园","以万寿山、昆明湖为主体的皇家园林，「三山五园」中的集大成者。"],
+  ["2003","明清皇家陵寝 · 明十三陵","明代十三位皇帝的陵寝群，中国现存规模最大的帝王陵墓建筑群。"],
+  ["2014","大运河","世界上最长的人工河道，北京段含白浮泉、什刹海、通州燃灯塔等众多文物点。"],
+  ["2024","北京中轴线","全长 7.8 公里，由钟鼓楼至永定门 15 处遗产要素构成，体现「中」「和」哲学的理想都城秩序。"]
+];
+document.getElementById("whGrid").innerHTML = WORLD.map(function(w){
+  return '<div class="wh"><span class="yr">'+w[0]+' 年列入</span><h3>'+w[1]+'</h3><p>'+w[2]+'</p></div>';
+}).join("");
+
+/* ============ 精选 ============ */
+const FEATURED=["故宫","天坛","颐和园","长城","十三陵","周口店遗址","正阳门","雍和宫","国子监","恭王府及花园","妙应寺白塔","房山云居寺塔及石经"];
+const HTML_ART={
+  "故宫":'<rect x="10" y="80" width="180" height="10" fill="#A33229" opacity=".25"/><path d="M40 80 Q60 34 100 22 Q140 34 160 80 Z" fill="#A33229" opacity=".3"/><rect x="60" y="46" width="80" height="34" fill="#A33229" opacity=".22"/><path d="M56 46 Q78 20 100 14 Q122 20 144 46 Z" fill="#A33229" opacity=".38"/>',
+  "天坛":'<rect x="46" y="76" width="108" height="14" fill="#A33229" opacity=".22"/><path d="M56 76 Q74 46 100 40 Q126 46 144 76 Z" fill="#A33229" opacity=".3"/><path d="M64 48 Q80 22 100 16 Q120 22 136 48 Z" fill="#A33229" opacity=".38"/>',
+  "颐和园":'<path d="M0 92 Q50 62 100 82 Q150 100 200 74 L200 100 L0 100 Z" fill="#3B5B4A" opacity=".18"/><rect x="76" y="46" width="48" height="42" fill="#A33229" opacity=".26"/><path d="M68 46 Q84 24 100 20 Q116 24 132 46 Z" fill="#A33229" opacity=".4"/>',
+  "长城":'<path d="M0 92 L30 66 L52 80 L82 48 L108 76 L138 52 L168 78 L200 60 L200 100 L0 100 Z" fill="#A33229" opacity=".26"/><rect x="82" y="38" width="18" height="16" fill="#A33229" opacity=".4"/><rect x="138" y="42" width="18" height="16" fill="#A33229" opacity=".4"/>',
+  "十三陵":'<path d="M0 92 Q100 30 200 92 Z" fill="#3E5670" opacity=".2"/><rect x="86" y="60" width="28" height="32" fill="#3E5670" opacity=".35"/><path d="M82 60 Q100 40 118 60 Z" fill="#3E5670" opacity=".45"/>',
+  "周口店遗址":'<path d="M0 92 L40 62 L72 82 L112 44 L150 78 L200 56 L200 100 L0 100 Z" fill="#B08A46" opacity=".26"/><circle cx="112" cy="44" r="7" fill="#B08A46" opacity=".5"/>',
+  "正阳门":'<rect x="46" y="60" width="108" height="34" fill="#A33229" opacity=".26"/><path d="M40 60 Q70 32 100 26 Q130 32 160 60 Z" fill="#A33229" opacity=".38"/><rect x="86" y="72" width="28" height="22" fill="#F7F4ED" opacity=".8"/>',
+  "雍和宫":'<rect x="48" y="62" width="104" height="32" fill="#A33229" opacity=".24"/><path d="M40 62 Q70 34 100 26 Q130 34 160 62 Z" fill="#A33229" opacity=".38"/><circle cx="100" cy="20" r="6" fill="#B08A46" opacity=".6"/>',
+  "国子监":'<rect x="30" y="52" width="140" height="42" fill="#A33229" opacity=".2"/><path d="M24 52 Q64 26 100 20 Q136 26 176 52 Z" fill="#A33229" opacity=".34"/><rect x="88" y="70" width="24" height="24" fill="#F7F4ED" opacity=".75"/>',
+  "恭王府及花园":'<rect x="40" y="58" width="120" height="36" fill="#3B5B4A" opacity=".2"/><path d="M34 58 Q67 30 100 24 Q133 30 166 58 Z" fill="#3B5B4A" opacity=".34"/><circle cx="42" cy="86" r="11" fill="#3B5B4A" opacity=".3"/><circle cx="158" cy="86" r="11" fill="#3B5B4A" opacity=".3"/>',
+  "妙应寺白塔":'<rect x="88" y="76" width="24" height="20" fill="#B08A46" opacity=".26"/><path d="M74 76 Q100 26 126 76 Z" fill="#B08A46" opacity=".34"/><circle cx="100" cy="30" r="7" fill="#B08A46" opacity=".55"/>',
+  "房山云居寺塔及石经":'<path d="M78 88 L100 20 L122 88 Z" fill="#B08A46" opacity=".3"/><rect x="70" y="86" width="60" height="10" fill="#B08A46" opacity=".22"/><rect x="94" y="46" width="12" height="12" fill="#F7F4ED" opacity=".7"/>'
+};
+document.getElementById("featGrid").innerHTML = FEATURED.map(function(nm){
+  const s = SITES.filter(function(x){return x.name===nm;})[0];
+  if(!s) return "";
+  const art = HTML_ART[nm] || '<path d="'+roof(100,92,80,34)+'" fill="'+CAT_COLOR[s.cat]+'" opacity=".3"/>';
+  return '<article class="feat" data-id="'+s.id+'">'+
+    '<div class="feat-top"><svg viewBox="0 0 200 100" preserveAspectRatio="xMidYMid slice">'+art+
+    '<line x1="0" y1="98" x2="200" y2="98" stroke="'+CAT_COLOR[s.cat]+'" stroke-width="2" opacity=".2"/></svg></div>'+
+    '<div class="feat-body"><h3>'+s.name+'</h3>'+
+    '<div class="feat-meta"><span class="tag n">'+s.dist.replace(/跨区.*/,"跨区")+'</span>'+
+    '<span class="tag n">'+CAT_SHORT[s.cat]+'</span>'+
+    '<span class="tag y">'+s.era+'</span>'+
+    (s.wh?'<span class="tag">世界遗产</span>':'')+'</div>'+
+    '<p>'+(s.desc.length>76?s.desc.slice(0,76)+"…":s.desc)+'</p></div></article>';
+}).join("");
+
+/* ============ 名录筛选 ============ */
+const state={q:"",dist:"",cat:"",batch:"",sort:"batch"};
+const distChips=document.getElementById("distChips");
+const catChips=document.getElementById("catChips");
+
+(function buildChips(){
+  const dm=countBy(SITES,"dist");
+  const dks=Object.keys(dm).sort(function(a,b){
+    const ia=DIST_ORDER.indexOf(a),ib=DIST_ORDER.indexOf(b);
+    return (ia<0?99:ia)-(ib<0?99:ib);
+  });
+  distChips.innerHTML='<span class="chip-label">行政区</span>'+
+    dks.map(function(k){return '<button class="chip" data-type="dist" data-v="'+k+'">'+(DIST_LABEL[k]||k.replace(/区$/,"区"))+' <span style="opacity:.55">'+dm[k]+'</span></button>';}).join("");
+
+  const cm=countBy(SITES,"cat");
+  const cks=Object.keys(cm).sort(function(a,b){return cm[b]-cm[a];});
+  catChips.innerHTML='<span class="chip-label">类别</span>'+
+    cks.map(function(k){return '<button class="chip" data-type="cat" data-v="'+k+'">'+CAT_SHORT[k]+' <span style="opacity:.55">'+cm[k]+'</span></button>';}).join("");
+})();
+
+function apply(){
+  let list=SITES.slice();
+  if(state.q){
+    const q=state.q.trim().toLowerCase();
+    list=list.filter(function(s){
+      return (s.name+s.dist+s.cat+s.era+s.desc).toLowerCase().indexOf(q)>-1;
+    });
+  }
+  if(state.dist) list=list.filter(function(s){return s.dist===state.dist;});
+  if(state.cat) list=list.filter(function(s){return s.cat===state.cat;});
+  if(state.batch) list=list.filter(function(s){return s.batch===+state.batch;});
+
+  if(state.sort==="name") list.sort(function(a,b){return a.name.localeCompare(b.name,"zh");});
+  else if(state.sort==="dist") list.sort(function(a,b){
+    const ia=DIST_ORDER.indexOf(a.dist),ib=DIST_ORDER.indexOf(b.dist);
+    return (ia<0?99:ia)-(ib<0?99:ib) || a.name.localeCompare(b.name,"zh");
+  });
+  else list.sort(function(a,b){return a.batch-b.batch || a.id-b.id;});
+
+  document.getElementById("n").textContent=list.length;
+  document.getElementById("empty").style.display=list.length?"none":"block";
+  document.getElementById("grid").innerHTML=list.map(function(s){
+    return '<article class="item" data-id="'+s.id+'">'+
+      '<h4>'+s.name+'</h4>'+
+      '<div class="sub"><span>'+s.dist.replace(/跨区（.*?）/,"跨区（…）")+'</span><i class="dot"></i>'+
+      '<span>'+CAT_SHORT[s.cat]+'</span><i class="dot"></i><span>'+s.era+'</span>'+
+      (s.wh?'<span class="dotwh">★ 世界遗产</span>':'')+'</div></article>';
+  }).join("");
+}
+
+document.getElementById("q").addEventListener("input",function(e){state.q=e.target.value;apply();});
+document.getElementById("selBatch").addEventListener("change",function(e){state.batch=e.target.value;apply();});
+document.getElementById("selSort").addEventListener("change",function(e){state.sort=e.target.value;apply();});
+document.getElementById("reset").addEventListener("click",function(){
+  state.q="";state.dist="";state.cat="";state.batch="";state.sort="batch";
+  document.getElementById("q").value="";document.getElementById("selBatch").value="";
+  document.getElementById("selSort").value="batch";
+  document.querySelectorAll(".chip.on").forEach(function(c){c.classList.remove("on");});
+  apply();
+});
+document.querySelectorAll(".chip[data-type]").forEach(function(c){
+  c.addEventListener("click",function(){
+    const t=c.getAttribute("data-type"), v=c.getAttribute("data-v");
+    state[t] = (state[t]===v) ? "" : v;
+    document.querySelectorAll('.chip[data-type="'+t+'"]').forEach(function(x){x.classList.remove("on");});
+    if(state[t]) c.classList.add("on");
+    apply();
+  });
+});
+apply();
+
+/* ============ 弹窗 ============ */
+const mask=document.getElementById("mask");
+const mBody=document.getElementById("mBody");
+const mArt=document.getElementById("modalArt");
+
+function openSite(id){
+  const s=SITES[id];
+  mArt.innerHTML=artFor(s);
+  mBody.innerHTML=
+    '<h3>'+s.name+'</h3>'+
+    '<div class="modal-meta">'+
+      '<span class="tag n">'+s.dist+'</span>'+
+      '<span class="tag n">'+s.cat+'</span>'+
+      '<span class="tag y">'+s.era+'</span>'+
+      '<span class="tag g">第'+["一","二","三","四","五","六","七","八"][s.batch-1]+'批 · '+BATCH_YEAR[s.batch]+'年</span>'+
+      (s.wh?'<span class="tag">★ 世界遗产</span>':'')+
+    '</div>'+
+    '<dl class="dl">'+
+      '<dt>名称</dt><dd>'+s.name+'</dd>'+
+      '<dt>行政区</dt><dd>'+s.dist+'</dd>'+
+      '<dt>类别</dt><dd>'+s.cat+'</dd>'+
+      '<dt>年代</dt><dd>'+s.era+'</dd>'+
+      '<dt>批次</dt><dd>国务院第'+["一","二","三","四","五","六","七","八"][s.batch-1]+'批全国重点文物保护单位（'+BATCH_YEAR[s.batch]+'）</dd>'+
+      (s.wh?'<dt>世界遗产</dt><dd>核心载体或相关遗产构成要素</dd>':'')+
+    '</dl>'+
+    '<div class="desc">'+s.desc+'</div>'+
+    (s.tip?'<div class="note"><b>参观提示：</b>'+s.tip+'</div>':'');
+  mask.classList.add("on");
+  document.body.style.overflow="hidden";
+}
+function closeModal(){ mask.classList.remove("on"); document.body.style.overflow=""; }
+
+document.getElementById("grid").addEventListener("click",function(e){
+  const it=e.target.closest(".item"); if(it) openSite(+it.getAttribute("data-id"));
+});
+document.getElementById("featGrid").addEventListener("click",function(e){
+  const it=e.target.closest(".feat"); if(it) openSite(+it.getAttribute("data-id"));
+});
+document.getElementById("mClose").addEventListener("click",closeModal);
+mask.addEventListener("click",function(e){ if(e.target===mask) closeModal(); });
+document.addEventListener("keydown",function(e){ if(e.key==="Escape") closeModal(); });
+
+/* ============ 路线 ============ */
+const ROUTES=[
+  {t:"中轴线一日 · 北京城的脊梁",s:"步行 + 地铁 · 约 8 公里 · 一整天",d:"从北端的钟鼓楼一路向南，把 15 处中轴线遗产要素走成一条线。这是理解「以中为尊、居中而治」最直观的方式。",pts:[["钟鼓楼","晨起听鼓，俯瞰什刹海"],["万宁桥","元代漕运水闸遗存"],["景山","登万春亭看故宫全景"],["故宫","午门进、神武门出"],["天安门","穿过外金水桥"],["正阳门","前门箭楼登高"],["天坛 · 先农坛","祭天与亲耕，东西对称"],["永定门","中轴线南端点"]]},
+  {t:"皇家坛庙巡礼 · 天地日月",s:"地铁 + 步行 · 约 1.5 天",d:"明清北京有「九坛八庙」。天、地、日、月四坛分居南北东西，是礼制与天文的双重遗产。",pts:[["天坛","南 · 冬至祭天"],["先农坛","西 · 帝王亲耕"],["太庙 · 社稷坛","中轴两侧，左祖右社"],["地坛","北 · 夏至祭地"],["日坛","东 · 春分祭日"],["月坛","西 · 秋分祭月"],["历代帝王庙","景德崇圣殿"]]},
+  {t:"京西古刹名园 · 三山五园",s:"地铁 + 公交/打车 · 约 2 天",d:"西郊一带集中了皇家园林与佛教名寺。颐和园、圆明园、香山与潭柘寺、戒台寺，构成北京最经典的西山线。",pts:[["颐和园","万寿山与昆明湖"],["圆明园遗址","西洋楼大水法"],["碧云寺 · 香山","金刚宝座塔"],["大觉寺","千年银杏与玉兰"],["万寿寺","北京艺术博物馆"],["潭柘寺","先有潭柘寺，后有北京城"],["戒台寺","戒坛与古松"]]},
+  {t:"长城与京郊陵寝 · 北线",s:"市郊铁路/公交 · 约 1.5 天",d:"从居庸关到八达岭，再折向十三陵。长城与帝陵同处一条山前地带，是明代北方防务与陵寝制度的一体两面。",pts:[["居庸关云台","元代六体文字石刻"],["八达岭长城","需提前预约"],["青龙桥车站","詹天佑与「人」字形线路"],["十三陵 · 神路","石像生大道"],["长陵","永乐帝陵，祾恩殿巨木"],["定陵","唯一开放地宫的帝陵"],["银山塔林","金元墓塔群"]]},
+  {t:"房山远古与石刻 · 西南线",s:"自驾/包车 · 约 1.5 天",d:"房山是北京的「考古区」：从旧石器时代的周口店，到西周的琉璃河、唐代的石经，一路直抵北京建城之前。",pts:[["周口店遗址","北京人头盖骨发现地"],["金陵","金代帝王陵寝"],["十字寺遗址","元代景教寺庙"],["房山云居寺","千年石经与地宫"],["石经山","雷音洞刻经"],["琉璃河遗址","西周燕都"],["万佛堂 · 孔水洞","隋唐石刻造像"]]},
+  {t:"近现代足迹 · 西城东城",s:"步行 + 地铁 · 约 1 天",d:"从五四运动的红楼出发，沿着名人故居与近代学府，读一条「另一面的北京」。",pts:[["北京大学红楼","新文化运动纪念馆"],["智化寺 · 智珠寺","胡同中的明代寺院"],["孚王府 · 东堂","王府与教堂相邻"],["鲁迅旧居","阜成门内的四合院"],["李大钊故居","文华胡同"],["梅兰芳纪念馆","护国寺街"],["辅仁大学 · 恭王府","定阜街一线"],["双清别墅","香山，1949"]]}
+];
+document.getElementById("routesBox").innerHTML = ROUTES.map(function(r,i){
+  return '<div class="route"><div class="route-h"><span class="no">'+(i+1)+'</span><h3>'+r.t+'</h3><span>'+r.s+'</span></div>'+
+    '<p>'+r.d+'</p><div class="steps">'+
+    r.pts.map(function(p){return '<div class="step"><b>'+p[0]+'</b><small>'+p[1]+'</small></div>';}).join("")+
+    '</div></div>';
+}).join("");
+
+/* ============ 贴士 ============ */
+const TIPS=[
+  ["约","预约先行","故宫、国家博物馆、八达岭、居庸关等热门点位须<em>提前实名预约</em>；多数博物馆周一闭馆（法定节假日除外）。出发前一天务必再确认一次。"],
+  ["通","交通组合","老城片区建议<em>地铁 + 步行</em>，胡同里共享单车比打车更快；京郊点位（房山、门头沟、延庆）建议自驾或包车，公交班次少。"],
+  ["时","时段选择","皇家坛庙与宫殿<em>清晨光线与游人最少</em>；寺庙下午侧光更利于看彩塑与壁画；长城建议上午前往，避开午后团队客流。"],
+  ["敬","场所礼仪","宗教场所保持安静、着装得体，殿内<em>禁止拍照与闪光灯</em>；陵寝与革命公墓请保持肃穆，勿嬉闹喧哗。"],
+  ["辨","开放状态","国保单位不等于景区。相当一部分是<em>办公、教学、居住或宗教场所</em>，长期不对外开放，行程前请查官方渠道。"],
+  ["季","最佳季节","<em>4—5 月与 9—10 月</em>最佳。春日看玉兰、丁香与海棠；秋日银杏（潭柘寺、大觉寺、地坛）与长城红叶最盛。"],
+  ["听","讲解加持","古建筑的看点往往在梁架、彩画与碑刻。建议租用讲解器或预约官方讲解，许多单位设有<em>二维码语音导览</em>。"],
+  ["护","文明参观","不触摸文物、不攀爬、不刻画；野长城（如箭扣）<em>禁止擅自攀爬</em>。拍照时让开通道，为他人留出观展空间。"]
+];
+document.getElementById("tipsBox").innerHTML = TIPS.map(function(t){
+  return '<div class="tip"><div class="ic">'+t[0]+'</div><h4>'+t[1]+'</h4><p>'+t[2]+'</p></div>';
+}).join("");
+</script>
+</body>
+</html>
